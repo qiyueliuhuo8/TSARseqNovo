@@ -1,0 +1,18 @@
+model:
+  resume: "../RSAM_ckpt/test.ckpt"
+
+dataset:
+  valid_data_path: ["./TSARseqNovo/sample.hdf5"]
+  max_out_len: 100
+
+hparameters:
+  batch_size: 128
+
+dataloader:
+  n_workers: 15
+
+Trainer:
+  device: '1'
+
+experiment_name: 'predict'
+save_path: './TSARseqNovo/logs'

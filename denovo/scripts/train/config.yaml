@@ -1,0 +1,44 @@
+model:
+  model_name: 'RSAM'
+  seq_len: 20 # max seq len
+  transformer_width: 768
+  transformer_heads: 8
+  transformer_layers: 6
+  batch_first: False
+  k_step: 2
+  dim_aa_embedding: 512
+  max_charge: 10
+  resume: 
+
+dataset:
+  train_data_path: []
+  valid_data_path: []
+
+hparameters:
+  lr: 0.0005
+  weight_decay: 0.0001
+  lr_scheduler: 'warmup_cosine_restart'
+  
+  warmup_iters: 250
+  
+  max_iters: 12500
+  
+  t_mult: 2
+  lr_min: 0.00001
+
+  batch_size: 128
+  dropout: 0.1
+
+  train_label_smmoothing: 0.01
+
+dataloader:
+  n_workers: 15
+
+Trainer:
+  device: '2,3'
+  max_epochs: 150
+
+# close model runner val_check_interval
+
+experiment_name: ''
+save_path: './TSARseqNovo/logs'
