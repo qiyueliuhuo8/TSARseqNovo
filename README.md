@@ -1,6 +1,6 @@
 # TSQRseqNovo:
 
-**TSARseqNovo: A Transformer-Based Semi-Autoregressive Framework for High-Speed and Accurate De No**
+**TSARseqNovo: A Transformer-Based Semi-Autoregressive Framework for High-Speed and Accurate De Novo Peptide Sequencing**
 TSARseqNovo is a superior transformer-based method designed for high-speed and accurate de novo sequencing.
 
 
