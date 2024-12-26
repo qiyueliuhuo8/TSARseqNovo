@@ -66,7 +66,7 @@ peptide precision:
 The predict process will take you a few minuntes depending on your gpu. If you use RTX 3090, it should take you less than 1 minute.
 
 ## Instructions for use
-If you want to train the model on your own dataset, following the instructions below.
+If you want to train the model on your own dataset, follow the instructions below.
 ### Train
 1. Prepare /path/to/TSARseqNovo/denovo/scripst/train/config.yaml, change train_data_path, valid_data_path, experiment_name and save_path. And change other training parameters as you wish.
 2. run train script 
