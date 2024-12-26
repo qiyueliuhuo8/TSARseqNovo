@@ -71,7 +71,7 @@ If you want to train the model on your own dataset, follow the instructions belo
 1. Prepare /path/to/TSARseqNovo/denovo/scripst/train/config.yaml, change train_data_path, valid_data_path, experiment_name and save_path. And change other training parameters as you wish.
 2. run train script 
 ~~~
-python train.py -c /train_path/config.yaml
+python train.py -c /path/to/TSARseqNovo/denovo/scripst/train/config.yaml
 ~~~
 The model checkpoints are saved under the log path, you can choose the best model for inference.
 ### Inference
